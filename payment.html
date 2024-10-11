@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Simulation - M-Pesa</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <h1>Payment</h1>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="register.html">Register</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="products.html">Products</a></li>
+    </ul>
+</nav>
+
+<div class="form-container">
+    <h2>Enter M-Pesa Payment Details</h2>
+    <form action="confirmation.html" method="POST">
+        <label for="phone">Phone Number (M-Pesa):</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="07xxxxxxxx" required>
+
+        <label for="amount">Amount to Pay:</label>
+        <input type="number" id="amount" name="amount" value="1000" required readonly>
+
+        <button type="submit">Proceed to Pay</button>
+    </form>
+</div>
+
+<footer>
+    <p>&copy; 2024 H&M Stores</p>
+</footer>
+
+</body>
+</html>
